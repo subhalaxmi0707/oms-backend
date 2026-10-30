@@ -11,7 +11,10 @@ import com.oms.service.OrderService;
 
 @RestController
 @RequestMapping("/api/orders")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+    "http://localhost:4200",
+    "https://cerulean-chaja-d11b22.netlify.app"
+})
 public class OrderController {
 
     @Autowired
